@@ -1,1 +1,3 @@
-# she-codes-hackathon-2021
+# Shecodes Hackathon 2021
+**Thông tin các thành viên**
+**Ý tưởng**

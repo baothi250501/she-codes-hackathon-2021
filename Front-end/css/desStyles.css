@@ -1,0 +1,176 @@
+body {
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    font-family: 'Oxygen', sans-serif;
+  }
+  
+  /** HEADER **/
+  #header-nav {
+    background-color: #ca8695;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #logo-img {
+    background: url('../images/logo-large-size.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+  }
+  .navbar-brand {
+    padding-top: 25px;
+  }
+  
+  .navbar-brand h1 {/* Project name */
+    font-family: 'Lora', serif;
+    color: #f0a06b;
+    font-size: 2.0em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+  
+  .navbar-brand p { /* Kosher cert */
+    color: #000;
+    text-transform:  uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+  }
+  
+  .navbar-brand p span { /* Star-K */
+    vertical-align: middle;
+  }
+  
+  #nav-list {
+    margin-top: 10px;
+  }
+  
+  #nav-list a {
+    color: #182954;
+    text-align: center;
+  }
+  
+  #nav-list a:hover {
+    background: #e7e7e7;
+  }
+  
+  #nav-list a span {
+    font-size: 1.8em;
+  }
+  
+  #phone {
+    margin-top: 5px;
+  }
+  
+  #phone a{ /* Phone number */
+    text-align: right;
+    padding-bottom: 0;
+  }
+  
+  #phone div { /* We deliver */
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+  }
+  
+  .navbar-header button .navbar-toggle .navbar-header .icon-bar {
+    border: 1px solid #61122f
+  }
+  
+  .navbar-header button .navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+  }
+  /* End Header */
+
+
+/* Image Page */
+button {
+    width: 120px;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #111111;
+    cursor: pointer;
+    background-color: white;
+}
+
+#start-camera {
+    margin-top: 50px;
+}
+
+#video {
+    display: none;
+    margin: 50px auto 0 auto;
+}
+
+#click-photo {
+    display: none;
+}
+
+#dataurl-container {
+    display: none;
+}
+
+#canvas {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+#dataurl-header {
+    text-align: center;
+    font-size: 15px;
+}
+
+#dataurl {
+    display: block;
+    height: 100px;
+    width: 320px;
+    margin: 10px auto;
+    resize: none;
+    outline: none;
+    border: 1px solid #111111;
+    padding: 5px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+/* End Image Page */
+
+/* Footer */
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #ca8695;
+    border-top: 0;
+  }
+  .panel-footer div .row {
+    margin-bottom: 35px;
+  }
+  #hours, #address {
+    line-height: 2;
+  }
+  #hours > span, #address > span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  #address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+  }
+  #testimonials {
+    font-style: italic;
+  }
+  #testimonials p:nth-child(2) {
+    margin-top: 25px;
+  }
+  /* End Footer */

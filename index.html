@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Capture Camera</title>
+    <title>Art Recognition</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/image.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=K2D:400,700" rel="stylesheet">
@@ -23,11 +23,11 @@
 
             <div class="navbar-brand">
               <a href="index.html">
-                <h1>David Chu's China Bistro</h1>
+                <h1>Open your eyes</h1>
               </a>
               <p>
                 <img src="images/star-k-logo.png" alt="Kosher certification">
-                <span>Kosher Certified</span>
+                <span>Oncee-Chan Team</span>
               </p>
             </div>
 
@@ -44,27 +44,27 @@
             <ul id="nav-list" class="nav navbar-nav navbar-right">
               <li>
                 <a href="html/menu-categories.html">
-                  <span class="glyphicon glyphicon-cutlery"></span>
-                  <br class="hidden-xs">Menu
-                </a>
-              </li>
-              <li>
-                <a href="#">
                   <span class="glyphicon glyphicon-info-sign"></span>
                   <br class="hidden-xs">About
                 </a>
               </li>
               <li>
                 <a href="#">
+                  <span class="glyphicon glyphicon-earphone"></span>
+                  <br class="hidden-xs">Connect
+                </a>
+              </li>
+              <li>
+                <a href="#">
                   <span class = "glyphicon glyphicon-certificate"></span>
-                  <br class="hidden-xs">Awards
+                  <br class="hidden-xs">Account
                 </a>
               </li>
               <li id = "phone" class="hidden-xs">
-                <a href="tel:410-602-5008">
-                  <span>410-602-5008</span>
+                <a href="tel:500-500-5000">
+                  <span>500-500-5000</span>
                 </a>
-                <div>* We Deliver</div>
+                <div>* We Support</div>
               </li>
             </ul><!-- #nav-list -->
           </div><!-- .collapse .navbar-collapse -->
@@ -79,71 +79,58 @@
     </a>
   </div>
   <div id = "xs-deliver" class = "text-center visible-xs">
-    * We Deliver
+    * We Support
   </div>
 
   <div id = "main-content" class="container">
-    <div id="loadingCssRipple">
-      <div class="lds-ripple">
-          <div></div>
-          <div></div>
+    <h2 id="menu-categories-title" class="text-center">Art Recognition</h2>
+    <button id="start-camera">Start Camera</button>
+    <section class="row">
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <a href="single-html/single-category-A.html">
+          <div class="category-tile">
+            <video id="video" width="320" height="240" autoplay></video>
+          </div>
+        </a>
+        <button id="click-photo">Click Photo</button>
       </div>
-    </div>
-
-    <div class="container h-100">
-
-        <div id="showModalPermission"></div>
-
-        <div class="row justify-content-md-center d-none" id="handleError"></div>
-
-        <div class="row h-100 justify-content-md-center align-items-center" id="handleSuccess">
-            <div class="display-cover">
-                <video id="player" autoplay></video>
-                <div class="controls d-none" id="controls">
-                    <button id="capture" type="button" class="btn btn-primary">
-                        <i class="material-icons">photo_camera</i>
-                    </button>
-                    <button id="download" type="button" class="btn btn-primary d-none">
-                        <i class="material-icons">cloud_download</i>
-                    </button>
-                    <button id="again" type="button" class="btn btn-primary d-none">
-                        <i class="material-icons">autorenew</i>
-                    </button>
-                </div>
-                <canvas id="snapshot" class="d-none w-100"></canvas>
-            </div>
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <div id="dataurl-container">
+          <canvas id="canvas" width="320" height="240"></canvas>
+          <div id="dataurl-header">Image Data URL</div>
+          <textarea id="dataurl" readonly></textarea>
         </div>
-    </div>
-    <a href="#" id="downloader" download="image.png" class="d-none"></a>
-
-    </div><!-- End of #main-content-->
+      </div>
+    </section>
+  </div><!-- End of #main-content-->
 
   <footer class="panel-footer">
     <div class="container">
       <div class="row">
         <section id="hours" class="col-sm-4">
-          <span>Hours:</span><br>
-          Sun-Thurs: 11:15am - 10:00pm<br>
-          Fri: 11:15am - 2:30pm<br>
-          Saturday Closed
+          <span>Members: </span><br>
+          <ul>
+            <li> Le Thuy Giang </li>
+            <li> Nguyen Thi Dinh Thuy </li>
+            <li> Chau Ly Phuong Trinh </li>
+            <li> Hoang Mai Uyen </li>
+            <li> Nguyen Le Bao Thi</li>
+          </ul>
           <hr class="visible-xs">
         </section>
         <section id="address" class="col-sm-4">
           <span>Address:</span><br>
-          7105 Reisterstown Road<br>
-          Baltimore, MD 21215
-          <p>* Delivery area within 3-4 miles, with minimum order
-            of $20 plus $3 charge for all deliveries.</p>
+          5 Dinh Tien Hoang<br>
+          Binh Thanh, HCM City
+          <p>* Hours: Mon-Sun 7a.m - 18p.m</p>
           <hr class="visible-xs">
         </section>
         <section id="testimonials" class="col-sm-4">
-          <p>"The best Chinese restaurant I've been to! And that's
-            saying a lot, since I've been to many!"</p>
-          <p>"Amazing food! Great service! Couldn't ask for more!
-            I'll be back again and again!"</p>
+          <p>"Keep your face to the sunshine and you cannot see the shadows."</p>
+          <p>"Walking with a friend in the dark is better than walking alone in the light."</p>
         </section>
       </div>
-      <div class="text-center">&copy; Copyright David Chu's China Bistro 2021</div>
+      <div class="text-center">&copy; Copyright Oncee-Chan Team 2021</div>
     </div>
   </footer>
 

@@ -7,25 +7,81 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/forumsStyles.css" />
+    <link rel="stylesheet" href="css/expStyles.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <div class="routing">
-      <div class="content-routing">
-        <a href="https://www.facebook.com/watch">
-          <img
-            src="https://images.pexels.com/photos/1342460/pexels-photo-1342460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="logo"
-          />
-        </a>
-      </div>
-      <div class="handle-action">
-        <button>Login</button> <button>Sign Up</button>
-      </div>
-    </div>
+    <nav id = "header-nav" class = "navbar navbar-default">
+      <div class = "container">
+          <div class = "navbar-header">
+            <a href = "index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img"></div>
+            </a>
+
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>Art in Eyes</h1>
+              </a>
+              <p>
+                <img src="images/star-k-logo.png" alt="Kosher certification">
+                <span>Onee-Chan Team</span>
+              </p>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle = "collapse"
+            data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id = "collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-info-sign"></span>
+                  <br class="hidden-xs">Sign up
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-certificate"></span>
+                  <br class="hidden-xs">Sign in
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class = "glyphicon glyphicon-earphone"></span>
+                  <br class="hidden-xs">Contact
+                </a>
+              </li>
+              <li id = "phone" class="hidden-xs">
+                <a href="tel:500-500-5000">
+                  <span>500-500-5000</span>
+                </a>
+                <div>* We Support</div>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id = "call-btn" class = "visible-xs">
+    <a class = "btn" href = "tell:500-500-5000">
+      <span class = "glyphicon glyphicon-earphone"></span>
+      500-500-5000
+    </a>
+  </div>
+  <div id = "xs-deliver" class = "text-center visible-xs">
+    * We Support
+  </div>
     <div class="content-main">
       <div
         class="content-header"
@@ -36,36 +92,31 @@
         "
       >
         <span class="title-content-main"
-          >Chào mừng bạn đến với thế giới nghệ thuật Việt
-        </span>
+          >Chào mừng bạn đến với thế giới nghệ thuật Việt</span
+        >
         <br />
         <span class="title-content-text"
-          >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui autem
-          tempore impedit dolorem dolor recusandae.</span
+          >"Trong nghệ thuật, bàn tay không bao giờ có thể tạo ra điều gì cao
+          hơn điều trái tim có thể tưởng tượng"</span
         >
       </div>
       <div class="gird-content">
         <div class="gird-item">
           <div class="image">
-            <img
-              src="https://images.pexels.com/photos/3184589/pexels-photo-3184589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            />
-            <span class="title-img">THVL 24/4/2020 ABC</span>
+            <img src="./images/art-gallery/image1.jpg" alt="" />
+            <span class="title-img">Thiếu nữ bên hoa huệ</span>
           </div>
           <div class="content-img">
             <div>
-              <h3 class="title-content-img">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis,
-                nemo.
-              </h3>
+              <h3 class="title-content-img">Thiếu nữ bên hoa huệ</h3>
               <span class="content-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique fuga alias inventore laboriosam optio fugit assumenda,
-                maxime soluta, doloremque aliquam ducimus corrupti numquam
-                magnam quibusdam sapiente sequi. Debitis possimus ullam dolorum
-                quis unde voluptatibus commodi necessitatibus sit, aspernatur in
-                vel!
+                Thiếu nữ bên hoa huệ mô tả chân dung của một người thiếu nữ mặc
+                áo dài trắng đang nghiêng đầu một cách tự nhiên về phía lọ hoa
+                huệ tây trắng. Hình dáng cô gái cùng những chi tiết và màu sắc
+                xung quanh tạo thành một hình khối giản dị, toát lên một nét
+                buồn vương vấn, nhẹ nhàng.[1] Hoa huệ cắm trong lọ bên cạnh cô
+                gái không phải là loại hoa huệ bông nhỏ thường dùng trong các
+                ngày rằm mà là hoa huệ tây hay tên phổ biến là hoa loa kèn.[2]
               </span>
             </div>
           </div>
@@ -74,50 +125,45 @@
         <div class="gird-item">
           <div class="content-img">
             <div>
-              <h3 class="title-content-img">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis,
-                nemo.
-              </h3>
-              <span class="content-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique fuga alias inventore laboriosam optio fugit assumenda,
-                maxime soluta, doloremque aliquam ducimus corrupti numquam
-                magnam quibusdam sapiente sequi. Debitis possimus ullam dolorum
-                quis unde voluptatibus commodi necessitatibus sit, aspernatur in
-                vel!
+              <h3 class="title-content-img">Mona Lisa</h3>
+              <span class="content-text"
+                >Mona Lisa (La Gioconda hay La Joconde, Chân dung Lisa
+                Gherardini, vợ của Francesco del Giocondo[1]) là một bức chân
+                dung thế kỷ 16 được vẽ bằng sơn dầu trên một tấm gỗ dương tại
+                Florence bởi Leonardo da Vinci trong thời kì Phục Hưng Italia.
+                Tác phẩm thuộc sở hữu của Chính phủ Pháp và hiện được trưng bày
+                tại bảo tàng Louvre ở Paris, Pháp với tên gọi Chân dung Lisa
+                Gherardini, vợ của Francesco del Giocondo.[1] Bức tranh là một
+                bức chân dung nửa người và thể hiện một phụ nữ có những nét thể
+                hiện trên khuôn mặt thường được miêu tả là bí ẩn.[2][3] Sự mơ hồ
+                trong nét thể hiện của người mẫu, sự lạ thường của thành phần
+                nửa khuôn mặt, và sự huyền ảo của các kiểu mẫu hình thức và
+                không khí hư ảo là những tính chất mới lạ góp phần vào sức mê
+                hoặc của bức tranh.[1]
               </span>
             </div>
           </div>
           <div class="image">
-            <img
-              src="https://images.pexels.com/photos/3184589/pexels-photo-3184589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            />
-            <span class="title-img">VTC 24/4/2020 ABC</span>
+            <img src="./images/art-gallery/image2.jpg" alt="" />
+            <span class="title-img">Mona Lisa</span>
           </div>
         </div>
         <div class="line"></div>
         <div class="gird-item">
           <div class="image">
-            <img
-              src="https://images.pexels.com/photos/3182825/pexels-photo-3182825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            />
-            <span class="title-img">VTV 24/4/2020 ABC</span>
+            <img src="./images/art-gallery/image3.jpg" alt="" />
+            <span class="title-img">Em Thúy</span>
           </div>
           <div class="content-img">
             <div>
-              <h3 class="title-content-img">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis,
-                nemo.
-              </h3>
+              <h3 class="title-content-img">Em Thúy</h3>
               <span class="content-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique fuga alias inventore laboriosam optio fugit assumenda,
-                maxime soluta, doloremque aliquam ducimus corrupti numquam
-                magnam quibusdam sapiente sequi. Debitis possimus ullam dolorum
-                quis unde voluptatibus commodi necessitatibus sit, aspernatur in
-                vel!
+                Em Thúy là chân dung chính diện một em bé gái 8 tuổi [1] ngồi
+                trên ghế mây, hai tay đặt trên đùi và mặc quần áo ở nhà đơn giản
+                màu trắng. Em bé có mái tóc ngắn, hai con mắt mở to trong sáng
+                cùng nét mặt thơ ngây.[2]. Nhân vật chính trong tác phẩm là bà
+                Nguyễn Minh Thúy sinh năm 1935, cháu ruột gọi bằng bác của họa
+                sĩ Trần Văn Cẩn[3]
               </span>
             </div>
           </div>
@@ -126,43 +172,66 @@
         <div class="gird-item">
           <div class="content-img">
             <div>
-              <h3 class="title-content-img">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis,
-                nemo.
-              </h3>
+              <h3 class="title-content-img">Hai thiếu nữ và em bé</h3>
               <span class="content-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique fuga alias inventore laboriosam optio fugit assumenda,
-                maxime soluta, doloremque aliquam ducimus corrupti numquam
-                magnam quibusdam sapiente sequi. Debitis possimus ullam dolorum
-                quis unde voluptatibus commodi necessitatibus sit, aspernatur in
-                vel!
+                Bức tranh vẽ một không gian thanh bình với hai phụ nữ mặc áo dài
+                tha thướt ngồi tâm sự ngoài hiên nhà, bên cạnh có một bé trai
+                đang ngồi chơi. Ba nhân vật được bố cục dạng tam giác tạo nên
+                trạng thái tĩnh lặng, cân bằng, êm ả. Cùng với hòa sắc màu vàng
+                ấm bao trùm tác giả đã tạo nên một hòa quyện tuyệt vời giữa
+                khung cảnh thiên nhiên và dáng nét biểu cảm mền mại của hai
+                người phụ nữ trong y phục áo dài truyền thống đằm thắm trang
+                nhã. Nét đặc sắc của bức tranh: Bố cục dạng hình tam giác trong
+                khung hình dọc của ba nhân vật là lối thức bố cục rất cổ điển
+                của nghệ thuật hội họa phương Tây. Tuy nhiên không gian êm đềm
+                với chiếc trõng tre, mành tre và cây vông hoa trắng, cùng trang
+                phục áo dài của các nhân vật nữ lại thể hiện ra quang cảnh rất
+                phương Đông, cũng như rất Việt Nam hồi đầu thế kỷ XX. Bức tranh
+                đã tạo ra sự kết hợp đầy rung cảm của tâm hồn phương Đông cùng
+                lối diễn họa học tập từ phương Tây đương thời.
               </span>
             </div>
           </div>
           <div class="image">
-            <img
-              src="https://images.pexels.com/photos/3182825/pexels-photo-3182825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            />
+            <img src="./images/art-gallery/image4.jpg" alt="" />
             <span class="title-img">THVL 24/4/2020 ABC</span>
           </div>
         </div>
       </div>
     </div>
-    <!-- <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.querySelector(".routing");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-        </script> -->
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span style="font-size: 28px;">Members: </span><br>
+            <ul>
+              <li style="font-size: 20px;"> Le Thuy Giang </li>
+              <li style="font-size: 20px;"> Nguyen Thi Dinh Thuy </li>
+              <li style="font-size: 20px;"> Chau Ly Phuong Trinh </li>
+              <li style="font-size: 20px;"> Hoang Mai Uyen </li>
+              <li style="font-size: 20px;"> Nguyen Le Bao Thi</li>
+            </ul>
+            <hr class="visible-xs">
+          </section>
+          <section id="address" class="col-sm-4">
+            <span style="font-size: 28px;">Address:</span><span style="font-size: 20px;"><br>
+            5 Dinh Tien Hoang<br>
+            Binh Thanh, HCM City</span>
+            <p style="font-size: 16px;">* Hours: Mon-Sun 7a.m - 18p.m</p>
+            <hr class="visible-xs">
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p style="font-size: 20px;">"Keep your face to the sunshine and you cannot see the shadows."</p>
+            <p style="font-size: 20px;">"Walking with a friend in the dark is better than walking alone in the light."</p>
+          </section>
+        </div>
+        <div class="text-center" style="font-size: 20px;">&copy; Copyright Onee-Chan Team 2021</div>
+      </div>
+    </footer>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

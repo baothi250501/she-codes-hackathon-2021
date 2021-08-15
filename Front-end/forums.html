@@ -5,27 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/forumsStyles.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <div class="routing">
-      <div class="content-routing">
-        <a href="index.html">
-          <img
-            src="images/logo-large-size.png"
-            alt="logo"
-          />
-        </a>
-      </div>
-      <div class="handle-action">
-        <button>Login</button> <button>Sign Up</button>
-      </div>
-    </div>
+    <nav id = "header-nav" class = "navbar navbar-default">
+      <div class = "container">
+          <div class = "navbar-header">
+            <a href = "index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img"></div>
+            </a>
+
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>Art in Eyes</h1>
+              </a>
+              <p>
+                <img src="images/star-k-logo.png" alt="Kosher certification">
+                <span>Onee-Chan Team</span>
+              </p>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle = "collapse"
+            data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id = "collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-info-sign"></span>
+                  <br class="hidden-xs">Sign up
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-certificate"></span>
+                  <br class="hidden-xs">Sign in
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class = "glyphicon glyphicon-earphone"></span>
+                  <br class="hidden-xs">Contact
+                </a>
+              </li>
+              <li id = "phone" class="hidden-xs">
+                <a href="tel:500-500-5000">
+                  <span>500-500-5000</span>
+                </a>
+                <div>* We Support</div>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id = "call-btn" class = "visible-xs">
+    <a class = "btn" href = "tell:500-500-5000">
+      <span class = "glyphicon glyphicon-earphone"></span>
+      500-500-5000
+    </a>
+  </div>
+  <div id = "xs-deliver" class = "text-center visible-xs">
+    * We Support
+  </div>
     <div class="content-main">
       <div
         class="content-header"
@@ -144,19 +199,40 @@
         </div>
       </div>
     </div>
-    <!-- <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.querySelector(".routing");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-        </script> -->
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span style="font-size: 28px;">Members: </span><br>
+            <ul>
+              <li style="font-size: 20px;"> Le Thuy Giang </li>
+              <li style="font-size: 20px;"> Nguyen Thi Dinh Thuy </li>
+              <li style="font-size: 20px;"> Chau Ly Phuong Trinh </li>
+              <li style="font-size: 20px;"> Hoang Mai Uyen </li>
+              <li style="font-size: 20px;"> Nguyen Le Bao Thi</li>
+            </ul>
+            <hr class="visible-xs">
+          </section>
+          <section id="address" class="col-sm-4">
+            <span style="font-size: 28px;">Address:</span><span style="font-size: 20px;"><br>
+            5 Dinh Tien Hoang<br>
+            Binh Thanh, HCM City</span>
+            <p style="font-size: 16px;">* Hours: Mon-Sun 7a.m - 18p.m</p>
+            <hr class="visible-xs">
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p style="font-size: 20px;">"Keep your face to the sunshine and you cannot see the shadows."</p>
+            <p style="font-size: 20px;">"Walking with a friend in the dark is better than walking alone in the light."</p>
+          </section>
+        </div>
+        <div class="text-center" style="font-size: 20px;">&copy; Copyright Onee-Chan Team 2021</div>
+      </div>
+    </footer>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
+
 </html>
